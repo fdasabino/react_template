@@ -1,0 +1,23 @@
+//purpose: Define the variables that will be used in the project
+
+@import url(https://fonts.googleapis.com/css?family=Urbanist:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+
+$base-primary: #482ff7;
+$base-secondary: #2d6cdf;
+$base-gray: #c5c5c5;
+$base-error: #ed4337;
+$base-white: #fafafa;
+$base-black: #1a1919;
+$base-border-color: #222121;
+$base-shadow: #00000026 0px 2px 8px;
+
+$base-breakpoint-768px: 768px;
+$base-breakpoint-480px: 480px;
+
+$base-font-headings: "Urbanist", Arial, sans-serif;
+$base-font-body: "Quicksand", Arial, sans-serif;
+
+$base-font-size: 16px;
+$base-border-radius: 8px;
+$base-line-height: 1.3;

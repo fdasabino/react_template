@@ -1,13 +1,14 @@
-import styles from "./index.module.scss";
+import Card from "./components/Card";
 
 function App() {
   return (
-    <div className={styles.app__container}>
-      <div className={styles.app__container_header}>
-        <h1>Template react app</h1>
-      </div>
-      <h1>Second heading</h1>
-    </div>
+    <main>
+      <h2>User profile card</h2>
+      <p>We are practicing the usage of Sass</p>
+      <hr />
+      <Card />
+      <hr />
+    </main>
   );
 }
 

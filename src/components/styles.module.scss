@@ -1,0 +1,59 @@
+@import "../styles/main.scss";
+
+.card {
+  width: 100%;
+  max-width: pxToRem(400px);
+  background-color: $base-black;
+  padding: pxToRem(18px);
+  border-radius: $base-border-radius;
+  border: pxToRem(4px) dotted $base-primary;
+  @include box-shadow($base-primary, 20px);
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: pxToRem(10px);
+
+    h2 {
+      font-size: pxToRem(20px);
+      color: $base-white;
+    }
+    &__company {
+      margin-top: pxToRem(10px);
+      p {
+        font-size: pxToRem(18px);
+        color: $base-white;
+        text-align: center;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    margin-bottom: pxToRem(10px);
+
+    @media (max-width: $base-breakpoint-480px) {
+      flex-direction: column;
+      gap: pxToRem(20px);
+    }
+
+    p {
+      font-size: pxToRem(16px);
+      color: $base-white;
+      width: 100%;
+    }
+
+    img {
+      width: pxToRem(100px);
+      min-width: pxToRem(100px);
+      height: pxToRem(100px);
+      min-height: pxToRem(100px);
+      border-radius: 50%;
+      shape-outside: circle(50%);
+      object-fit: cover;
+      border: pxToRem(4px) solid $base-primary;
+    }
+  }
+}

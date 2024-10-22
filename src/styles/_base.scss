@@ -1,0 +1,103 @@
+// purpose: Define the globals styles for the application
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  touch-action: manipulation; /* Ensure better touch responsiveness */
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  @media (max-width: $base-breakpoint-480px) {
+    padding: 0 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-headings;
+  font-weight: 500;
+}
+
+p,
+small,
+span {
+  font-family: $base-font-body;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+}
+
+button,
+textarea,
+input,
+select,
+option,
+label {
+  transition: all 0.5s linear;
+  font-family: $base-font-body;
+  line-height: 1.1rem !important;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto; /* Ensure images and media adjust proportionally */
+}
+
+a {
+  font-family: $base-font-body;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+hr {
+  padding: 0 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border: none;
+  border-top: 2px dotted $base-primary;
+}
